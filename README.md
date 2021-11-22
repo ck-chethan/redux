@@ -1,6 +1,7 @@
 # Redux Tutorial
 
 console.clear()
+
 //People Dropping of a form (Action Creators)
 const createPolicy = (name, amount) => {
   return { //Action (A form in our Analogy)
