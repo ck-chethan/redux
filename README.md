@@ -1,4 +1,4 @@
-# redux
+# Redux Tutorial
 
 console.clear()
 //People Dropping of a form (Action Creators)
