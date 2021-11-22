@@ -79,11 +79,18 @@ const store = createStore(ourDepartments);
 //console.log(store);
 
 //Before dispatch we need to create an action
-const action = createPolicy('Pintu', 20);
-console.log(action);
+//const action = createPolicy('Pintu', 20);
+//console.log(action);
 
 //Dispacth
-store.dispatch(action);
+store.dispatch(createPolicy('Pintu', 20));
+store.dispatch(createPolicy('Jhony', 30));
+store.dispatch(createPolicy('Jimmy', 40));
+
+store.dispatch(createClaim('Pintu', 120));
+store.dispatch(createClaim('Jhony', 50));
+
+store.dispatch(deletePolicy('Jimmy', 50));
 
 //To show the states
 console.log(store.getState());
